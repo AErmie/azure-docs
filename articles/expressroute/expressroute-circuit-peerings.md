@@ -25,7 +25,7 @@ ms.author: ganesr,cherylmc
 ## ExpressRoute circuits
 An *ExpressRoute circuit* represents a logical connection between your on-premises infrastructure and Microsoft cloud services through a connectivity provider. You can order multiple ExpressRoute circuits. Each circuit can be in the same or different regions, and can be connected to your premises through different connectivity providers. 
 
-ExpressRoute circuits do not map to any physical entities. A circuit is uniquely identified by a standard GUID called as a service key (s-key). The service key is the only piece of information exchanged between Microsoft, the connectivity provider, and you. The s-key is not a secret for security purposes. There is a 1:1 mapping between an ExpressRoute circuit and the s-key.
+ExpressRoute circuits do not map to any physical entities. A circuit is uniquely identified by a standard GUID called a Service Key (s-key). The service key is the only piece of information exchanged between Microsoft, the connectivity provider, and you. The s-key is not a secret for security purposes. There is a 1:1 mapping between an ExpressRoute circuit and the s-key.
 
 An ExpressRoute circuit can have up to three independent peerings: Azure public, Azure private, and Microsoft. Each peering is a pair of independent BGP sessions each of them configured redundantly for high availability. There is a 1:N (1 <= N <= 3) mapping between an ExpressRoute circuit and routing domains. An ExpressRoute circuit can have any one, two, or all three peerings enabled per ExpressRoute circuit.
 
